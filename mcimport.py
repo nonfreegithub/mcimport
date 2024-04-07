@@ -33,7 +33,7 @@ if not Path(sys.argv[2] + "/world.mt").exists():
 		if os.environ["GAME_ID"] == "MTG":
 			wo.write("gameid = minetest\n")
 		elif os.environ["GAME_ID"] == "MCL2":
-			wo.write("gameid = miniclonia\n")
+			wo.write("gameid = mineclonia\n")
 
 
 if not Path(sys.argv[2] + "/worldmods").exists():
