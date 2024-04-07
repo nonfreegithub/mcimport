@@ -35,6 +35,8 @@ if not Path(sys.argv[2] + "/world.mt").exists():
 		elif os.environ["GAME_ID"] == "MCL2":
 			wo.write("gameid = mineclonia\n")
 
+		wo.write("world_name = " + sys.argv[2] + "\n")
+
 
 if not Path(sys.argv[2] + "/worldmods").exists():
 	os.makedirs(sys.argv[2]+"/worldmods")
